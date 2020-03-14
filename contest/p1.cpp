@@ -12,7 +12,7 @@ using namespace std;
 int main () {
 string s,t;
 cin>>s;
-transform(s.begin(),s.end(),s.begin(),::tolower);
+transform(s.begin(),s.end(),s.begin(),::tolower); //Stl to convert letters in small
 cin>>t;
 transform(t.begin(),t.end(),t.begin(),::tolower);
 int i;
