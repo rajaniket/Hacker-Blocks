@@ -22,3 +22,28 @@ for(i=0;i<t.length();i++){
 	 cout<<t.at(i);
  }
 }}
+
+
+// method-2
+/*
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+string s,t;
+cin>>s;
+cin>>t;
+int a[26]={0};
+for(int i=0;i<s.length();i++)
+    a[s[i]-'a']++;
+for(int i=0;i<t.length();i++)
+    a[t[i]-'a']--;
+for(int i=0;i<26;i++)
+    if(a[i]!=0)
+{
+    cout<<(char)(i+'a');
+    return 0;
+}
+
+}
+*/
